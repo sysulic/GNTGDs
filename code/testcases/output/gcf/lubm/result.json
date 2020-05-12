@@ -1,0 +1,22 @@
+{
+    "name": "LUBM",
+    "rules": 110,
+    "facts": 100,
+    "queries": [
+        {
+            "name": "q0",
+            "query": "q(X) :- student(X), not teachingAssistant(X).",
+            "length": 2,
+            "generate": 3569057,
+            "forest": 1201,
+            "time(s)": {
+                "grounding": 302.4698750972748,
+                "solving": 66.67667889595032,
+                "total": 369.1465539932251
+            },
+            "answer": true
+        }
+    ],
+    "rules(*+-^)": 442,
+    "constraints(*+-^)": 151
+}

@@ -1,0 +1,46 @@
+{
+    "name": "LUBM",
+    "rules": 110,
+    "facts": 100,
+    "queries": [
+        {
+            "name": "q0",
+            "query": "q(X,Y) :- publication(X), teacherOf(P,W), not teachingAssistant(Z), teacherOf(Y,Z), not visitingProfessor(P), not software(X), not manual(X), publicationAuthor(X,Y), takesCourse(Z,W), not professor(Y).",
+            "length": 10,
+            "generate": 11301,
+            "time(s)": {
+                "grounding": 12.96021032333374,
+                "solving": 5.812344074249268,
+                "validating": 345.9691758155823,
+                "total": 364.7417302131653
+            },
+            "answer": false
+        },
+        {
+            "name": "q1",
+            "query": "q(X) :- not teachingAssistant(X), student(X).",
+            "length": 2,
+            "generate": 1101,
+            "time(s)": {
+                "grounding": 0.29938292503356934,
+                "solving": 0.026539087295532227,
+                "validating": 0,
+                "total": 0.32592201232910156
+            },
+            "answer": true
+        },
+        {
+            "name": "q2",
+            "query": "q(X,Y) :- not dean(Y), not teacherOf(X,Y), not chair(Y), student(X), researchAssistant(X), professor(Y).",
+            "length": 6,
+            "generate": 4953,
+            "time(s)": {
+                "grounding": 3.5421040058135986,
+                "solving": 1.3942420482635498,
+                "validating": 40.706231117248535,
+                "total": 45.642577171325684
+            },
+            "answer": false
+        }
+    ]
+}

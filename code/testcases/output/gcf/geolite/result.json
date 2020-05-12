@@ -1,0 +1,22 @@
+{
+    "name": "GEOLITE",
+    "rules": 446,
+    "facts": 122,
+    "queries": [
+        {
+            "name": "q0",
+            "query": "q(Z) :- isLocatedAlong(Z,A), isLocated(Y,Z).",
+            "length": 2,
+            "generate": 23999822,
+            "forest": 3032,
+            "time(s)": {
+                "grounding": 2130.427489042282,
+                "solving": 520.3972671031952,
+                "total": 2650.8247561454773
+            },
+            "answer": true
+        }
+    ],
+    "rules(*+-^)": 2026,
+    "constraints(*+-^)": 770
+}

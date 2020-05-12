@@ -1,0 +1,22 @@
+{
+    "name": "VICODI",
+    "rules": 236,
+    "facts": 165,
+    "queries": [
+        {
+            "name": "q0",
+            "query": "q(X) :- not religiousIdeology(X), ideology(X).",
+            "length": 2,
+            "generate": 29544611,
+            "forest": 3508,
+            "time(s)": {
+                "grounding": 3099.62504696846,
+                "solving": 514.0205678939819,
+                "total": 3613.645614862442
+            },
+            "answer": true
+        }
+    ],
+    "rules(*+-^)": 1081,
+    "constraints(*+-^)": 406
+}

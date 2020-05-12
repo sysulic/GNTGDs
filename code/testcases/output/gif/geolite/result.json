@@ -1,0 +1,46 @@
+{
+    "name": "GEOLITE",
+    "queries": [
+        {
+            "name": "q0",
+            "answer": false,
+            "time(s)": {
+                "solving": 0.8321735858917236,
+                "total": 15.402416706085205,
+                "grounding": 2.0073297023773193,
+                "validating": 12.562913417816162
+            },
+            "generate": 2892,
+            "length": 6,
+            "query": "q(A) :- hasOperator(X,Y), bakeryOp(Y), bakery(X), isLocated(Y,Z), isLocatedAlong(Z,A), not hasBakeryOperator(X,Y)."
+        },
+        {
+            "name": "q1",
+            "answer": false,
+            "time(s)": {
+                "solving": 3.3893797397613525,
+                "total": 92.47814464569092,
+                "grounding": 8.728196859359741,
+                "validating": 80.36056804656982
+            },
+            "generate": 6064,
+            "length": 10,
+            "query": "q(C) :- attributes(X), isLocated(Y,Z), supermarket(Y), isLocatedAlong(Z,A), not bankOp(X), not chemist(B), isLocatedDisjoint(A,B), hasOperator(X,Y), hasOperator(B,C), not link(X)."
+        },
+        {
+            "name": "q2",
+            "answer": false,
+            "time(s)": {
+                "solving": 0.1633751392364502,
+                "total": 1.745032787322998,
+                "grounding": 0.3796083927154541,
+                "validating": 1.2020492553710938
+            },
+            "generate": 808,
+            "length": 2,
+            "query": "q(Z) :- isLocated(Y,Z), isLocatedAlong(Z,A)."
+        }
+    ],
+    "rules": 446,
+    "facts": 122
+}

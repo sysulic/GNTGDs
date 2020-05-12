@@ -1,0 +1,20 @@
+{
+    "name": "TEST",
+    "rules": 1,
+    "facts": 1,
+    "queries": [
+        {
+            "name": "q0",
+            "query": "q(X) :- a(X), b(X,Z), not c(X).",
+            "length": 3,
+            "generate": 1,
+            "time(s)": {
+                "grounding": 0.00037980079650878906,
+                "solving": 0.007150173187255859,
+                "validating": 0,
+                "total": 0.0075299739837646484
+            },
+            "answer": true
+        }
+    ]
+}

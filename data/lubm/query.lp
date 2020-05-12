@@ -1,0 +1,1 @@
+q(X) :- student(X), not teachingAssistant(X).

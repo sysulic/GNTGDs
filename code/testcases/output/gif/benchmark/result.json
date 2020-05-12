@@ -1,0 +1,20 @@
+{
+    "name": "BENCHMARK",
+    "rules": 136,
+    "facts": 100543,
+    "queries": [
+        {
+            "name": "q0",
+            "query": "q01(X) :- takescourse(X,department0-university0-graduatecourse0), graduatestudent(X).",
+            "length": 2,
+            "generate": 127946,
+            "time(s)": {
+                "grounding": 3.8425328731536865,
+                "solving": 2.1813910007476807,
+                "validating": 0,
+                "total": 6.023923873901367
+            },
+            "answer": true
+        }
+    ]
+}

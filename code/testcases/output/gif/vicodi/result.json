@@ -1,0 +1,46 @@
+{
+    "name": "VICODI",
+    "rules": 236,
+    "facts": 165,
+    "queries": [
+        {
+            "name": "q0",
+            "query": "q(X,Y) :- scientist(Z), related(Z,K), role(Y), location(X), not hasRole(X,Y), locationPartRelation(B), isLocationContainerMemberOf(C,B), isLocationContainerMemberOf(X,B), hasLocationContainerMember(D,C), related(Y,Z).",
+            "length": 10,
+            "generate": 18263,
+            "time(s)": {
+                "grounding": 30.866245985031128,
+                "solving": 11.41155219078064,
+                "validating": 1401.1554670333862,
+                "total": 1443.433265209198
+            },
+            "answer": false
+        },
+        {
+            "name": "q1",
+            "query": "q(X) :- ideology(X), not religiousIdeology(X).",
+            "length": 2,
+            "generate": 1631,
+            "time(s)": {
+                "grounding": 0.5539259910583496,
+                "solving": 0.030505895614624023,
+                "validating": 0,
+                "total": 0.5844318866729736
+            },
+            "answer": true
+        },
+        {
+            "name": "q2",
+            "query": "q(Z) :- flavour(X), not hasRole(X,Y), not scientist(Z), related(Z,K), role(Y), related(X,Z).",
+            "length": 6,
+            "generate": 7675,
+            "time(s)": {
+                "grounding": 7.301237106323242,
+                "solving": 2.56553316116333,
+                "validating": 155.34641885757446,
+                "total": 165.21318912506104
+            },
+            "answer": false
+        }
+    ]
+}
